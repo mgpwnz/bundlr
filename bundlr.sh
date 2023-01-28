@@ -181,13 +181,13 @@ break
 
 "Helpful commands")
 
-echo -e 'To restart docker: \e[1m\e[32mcd $HOME/bundlr/validator-rust && \docker-compose restart'
-echo -e 'To stop docker: \e[1m\e[32mcd $HOME/bundlr/validator-rust && \ docker-compose down -v'
-echo -e 'To start docker: \e[1m\e[32mcd $HOME/bundlr/validator-rust && \ docker-compose up -d'
-echo -e 'To check logs: \e[1m\e[32mcd $HOME/bundlr/validator-rust && \ docker-compose logs -f --tail 10'
-echo -e 'To check wallet address #1 cd $HOME/bundlr/validator-rust && \ cargo run --bin wallet-tool show-address \ --wallet wallet.json | jq ".address" | tr -d '
+echo -e 'To restart docker: \e[1m\e[32mcd $HOME/bundlr/validator-rust &&\docker-compose restart'
+echo -e 'To stop docker: \e[1m\e[32mcd $HOME/bundlr/validator-rust && \docker-compose down -v'
+echo -e 'To start docker: \e[1m\e[32mcd $HOME/bundlr/validator-rust && \docker-compose up -d'
+echo -e 'To check logs: \e[1m\e[32mcd $HOME/bundlr/validator-rust && \docker-compose logs -f --tail 10'
+echo -e 'To check wallet address #1 cd $HOME/bundlr/validator-rust && \cargo run --bin wallet-tool show-address \--wallet wallet.json | jq ".address" | tr -d '
 echo -e 'To check wallet address #2 \e[1m\e[32mecho ${BUNDLR_ADDRESS}'
-echo -e 'To check balance \e[1m\e[32mcd $HOME/bundlr/validator-rust && \ testnet-cli balance ${BUNDLR_ADDRESS} '
+echo -e 'To check balance \e[1m\e[32mcd $HOME/bundlr/validator-rust && \testnet-cli balance ${BUNDLR_ADDRESS} '
 
 break
 ;;
